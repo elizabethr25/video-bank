@@ -1,0 +1,16 @@
+.card-body {
+    text-align: center;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card:last-child {
+    margin-bottom: 30px;
+}
+
+footer {
+    height: 50px;
+    background-color: darkgrey;
+}
