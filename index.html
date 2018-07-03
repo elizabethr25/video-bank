@@ -21,7 +21,7 @@
 </head>
 
 <body>
-
+   
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">UA Coding Bootcamp Video Bank</a>
@@ -30,22 +30,68 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sections
+                        Videos by Week
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="videoPages/week1.html">Week 1 Videos</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="videoPages/week2.html">Week 2 Videos</a>
+                        <a class="dropdown-item" href="videoPages/week3.html">Week 3 Videos</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
+     <!-- Jumbotron -->
+     <div class="jumbotron container">
+            <h1 class="display-4">UA Coding Bootcamp Video Bank</h1>
+            <hr class="my-4">
+            <p>Relevant videos will be pushed daily based on the homework/activites we have covered that day!</p>
+        </div>
+    
 
+        <!-- Table -->
+    <div class="container">
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Week #</th>
+                    <th scope="col">Topics</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Week 1</th>
+                    <td>HTML, CSS, Bootstrap, Media Queries</td>
+                    <td>
+                        <a href="videoPages/week1.html">Explore Week 1 Videos</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Week 2</th>
+                    <td>Javascript and jQuery</td>
+                    <td>
+                        <a href="videoPages/week2.html">Explore Week 2 Videos</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Week 3</th>
+                    <td>JavaScript / jQuery Review, Timers, Debugger, and Introduction to APIs and AJAX</td>
+                    <td>
+                        <a href="videoPages/week3.html">Explore Week 3 Videos</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="fixed-bottom"></footer>
 
 </body>
 

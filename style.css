@@ -1,3 +1,23 @@
+body {
+    background-color: lightgrey;
+}
+
+.jumbotron {
+    margin-top: 20px;
+}
+
+.weekHeader {
+    color: lightgrey;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
 .card-body {
     text-align: center;
 }
@@ -10,7 +30,11 @@
     margin-bottom: 30px;
 }
 
+.table {
+    margin-top: 20px;
+}
+
 footer {
-    height: 50px;
+    height: 75px;
     background-color: darkgrey;
 }
