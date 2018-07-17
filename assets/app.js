@@ -1,9 +1,28 @@
 $(document).ready(function() {
-  $(".searchBtn").on("click", function() {
-    search();
-  });
+//Render tag buttons
+  let renderTagButtons = () => {
+    let tr = $("tr");
 
-  let search = () => {
+    for (i = 1; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      tags = td.getAttribute("tag");
+      let b = $("<button>");
+      b.text(tags);
+      b.addClass("tagButton");
+      b.attr("button-value", tags)
+      $(".buttonDiv").append(b);
+    }
+  };
+  renderTagButtons();
+
+  let renderFullTable = () => {
+    $("#searchInput").val('');
+      let tr = $("tr");
+      tr.show()
+  }
+
+//Search button on click
+  $(".searchBtn").on("click", function() {
     let input = $("#searchInput").val();
     let filter = input.toUpperCase();
     let tr = $("tr");
@@ -20,26 +39,27 @@ $(document).ready(function() {
     if (input === "") {
       $("tr").show();
     }
-  };
+  });
 
-//   $(window).on("load", function() {
-//     let tagtrs
-//   })
+// Tag button on click
+  $(".tagButton").on("click", function(){
+    renderFullTable();
+    let input = $(this).attr("button-value");
+    let filter = input.toUpperCase();
+    let tr = $("tr");
 
-  //   let searchTags = () => {
-  //     let input = $("#searchInput").val();
-  //     let filter = input.toUpperCase();
-  //     let tr = $("tr");
+    for (i = 1; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td.innerHTML.toUpperCase().indexOf(filter) > 0) {
+        tr[i].style.display = " ";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
 
-  //     for (i = 1; i < tr.length; i++) {
-  //       td = tr[i].getElementsByTagName("td")[0];
-  //       let tags = td.getAttribute("tag");
-  //       //   console.log(tags);
-  //       if (tags.toUpperCase().indexOf(filter) > 0) {
-  //         tr[i].style.display = " ";
-  //       } else {
-  //         tr[i].style.display = "none";
-  //       }
-  //     }
-  //   };
+    if (input === "") {
+      $("tr").show();
+    }
+  })
+
 });
