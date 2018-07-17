@@ -48,58 +48,78 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron container">
-        <h1 class="display-4">UA Coding Bootcamp Video Bank</h1>
+        <h1 class="display-4">Resources Link Collection</h1>
         <hr class="my-4">
-        <p>Relevant videos will be pushed daily based on the homework/activites we have covered that day!</p>
+        <p>Misc. useful resources links!</p>
     </div>
 
-
-    <!-- Table -->
+    <!-- Resource Links Table -->
     <div class="container">
+
+        <!-- Search Button -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary searchBtn" type="submit">Search</button>
+            </div>
+            <input type="text" id="searchInput" class="form-control" placeholder="Search resources here..." aria-label="" aria-describedby="basic-addon1">
+        </div>
+
+        <!-- Table Body -->
         <table class="table table-hover table-dark">
             <thead>
                 <tr>
-                    <th scope="col">Week #</th>
-                    <th scope="col">Topics</th>
-                    <th scope="col">Link</th>
+                    <th scope="col" class="tableHeader">
+                        <h3>Resource</h3>
+                    </th>
+                    <th scope="col" class="tableHeader">
+                        <h3>Resource Name</h3>
+                    </th>
+                    <th scope="col" class="tableHeader">
+                        <h3>Link</h3>
+                    </th>
                 </tr>
             </thead>
             <tbody>
+                <!-- Git Branching -->
                 <tr>
-                    <th scope="row">Week 1</th>
-                    <td>HTML, CSS, Bootstrap, Media Queries</td>
+                    <td scope="row" class="tdName" tag="git">Learn Git Branching</td>
+                    <td>Interactive website to learn / practice git branching with visual aids.</td>
                     <td>
-                        <a href="videoPages/week1.html">Explore Week 1 Videos</a>
+                        <a href="https://learngitbranching.js.org/">Click here to explore Git Branching!</a>
                     </td>
                 </tr>
+
+                <!-- API Article -->
                 <tr>
-                    <th scope="row">Week 2</th>
-                    <td>Javascript and jQuery</td>
+                    <td scope="row" class="tdName" tag="api">What is an API? In English, please.</td>
+                    <td>Refresher on what API's are and how they work.</td>
                     <td>
-                        <a href="videoPages/week2.html">Explore Week 2 Videos</a>
+                        <a href="https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82">Click here to explore API's!</a>
                     </td>
                 </tr>
+
+                <!-- Whiteboarding Interview  -->
                 <tr>
-                    <th scope="row">Week 3</th>
-                    <td>JavaScript / jQuery Review, Timers, Debugger</td>
+                    <td scope="row" class="tdName" tag="interview whiteboarding interviewing">How to Be Successful at Whiteboarding Interviews</td>
+                    <td>Deep dive on whiteboarding interview questions, tips, tricks, and examples.</td>
                     <td>
-                        <a href="videoPages/week3.html">Explore Week 3 Videos</a>
+                        <a href="https://the-coding-bootcamp.gitbooks.io/whiteboarding-algorithms-and-interview-questions/content/">Click here to explore Whiteboarding Interviews!</a>
                     </td>
                 </tr>
+
+                <!-- Javascript Scope -->
                 <tr>
-                    <th scope="row">Week 4</th>
-                    <td>Introduction to APIs and AJAX</td>
+                    <td scope="row" class="tdName" tag="javascript scope">Understanding Scope and Context in JavaScript</td>
+                    <td>Overview of scope vs context in Javasript .</td>
                     <td>
-                        <a href="videoPages/week4.html">Explore Week 4 Videos</a>
+                        <a href="http://ryanmorr.com/understanding-scope-and-context-in-javascript/">Click here to explore scope and context!</a>
                     </td>
                 </tr>
             </tbody>
         </table>
-    </div>
 
-
-    <!-- Footer -->
-    <footer class="fixed-bottom"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/app.js"></script>
 
 </body>
 

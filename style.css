@@ -14,6 +14,11 @@ body {
     margin-left: 50px;
 }
 
+.tableHeader {
+    text-align: center;
+    color: lightgrey;
+}
+
 .navbar-nav {
     margin-right: 50px;
 }
