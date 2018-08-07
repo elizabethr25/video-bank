@@ -31,10 +31,6 @@ body {
     margin-top: 20px;
 }
 
-.card:last-child {
-    margin-bottom: 30px;
-}
-
 .table {
     margin-top: 20px;
 }
@@ -42,6 +38,7 @@ body {
 footer {
     height: 50px;
     background-color: #222529;
+    margin-top: 30px;
 }
 
 button {
