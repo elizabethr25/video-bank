@@ -55,3 +55,7 @@ button {
 .buttonDiv {
     text-align: center;
 }
+
+#navbarDropdownMenuLink {
+    color: white;
+}
